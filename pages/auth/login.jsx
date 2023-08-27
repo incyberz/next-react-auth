@@ -16,8 +16,8 @@ export default function Login() {
     <div className="mt-12">
       <p className="mb-2 text-xs">
         To access the{" "}
-        <span className="text-semibold italic">System&apos;s Dashboard</span>{" "}
-        please click on of Provider!
+        <span className="text-semibold italic">Systems Dashboard</span> please
+        click on of Provider!
       </p>
       <button
         onClick={GoogleLogin}
