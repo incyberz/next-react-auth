@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../utils/firebase";
+import Image from "next/image";
 
 export default function Nav() {
   const [user, loading] = useAuthState(auth);
@@ -20,7 +21,9 @@ export default function Nav() {
               <div className="flex gap-2">
                 <div>{user.displayName}</div>
                 <div>
-                  <img
+                  <Image
+                    width={12}
+                    height={12}
                     src={user.photoURL}
                     alt="Your Profile"
                     className="h-8 w-8 rounded-full"
